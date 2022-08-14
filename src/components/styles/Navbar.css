@@ -1,0 +1,21 @@
+nav{
+    background:#F55A5A;
+    height: 55px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+gap: 0.75em
+}
+
+nav p{
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 22.92px;
+    
+}
+
+nav i{
+    font-size:22.92px;
+}

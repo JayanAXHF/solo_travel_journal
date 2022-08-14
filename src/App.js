@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Navbar from "./components/Navbar.jsx";
+import data from "./data.js";
+import Place from "./components/Place.jsx";
 
 function App() {
+  const location = data.map((place) => {
+    return (
+      <div>
+        <Place {...place} />
+        <hr id="line" />
+      </div>
+    );
+  });
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      {location}
+      <h5>Made by FRXGFA</h5>
     </div>
   );
 }
